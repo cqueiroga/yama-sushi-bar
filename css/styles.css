@@ -1,0 +1,416 @@
+@import url("font-stylesheet.css");
+
+/* Fixes page shift */
+html {
+	overflow-y: scroll;
+}
+/* Body */
+body {
+	font-family: pt-sans;
+	background-color: #313030;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 400;
+	background-image: url(../images/bg.jpg);
+	background-size: 102% auto;
+}
+h2 {
+	font-family: JAPAB;
+	text-align: center;
+}
+/* Container */
+.container {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 0px 0px;
+	box-shadow: 0px 0px;
+	background-size: auto 60%;
+}
+/* Navigation */
+header {
+	width: 100%;
+	height: 13%;
+	background-color: #000000;
+}
+#logo {
+	width: 25%;
+}
+nav {
+	float: right;
+	width: 64%;
+	text-align: right;
+	margin-right: 25px;
+}
+header nav ul {
+	list-style: none;
+	float: right;
+}
+nav ul li {
+	float: left;
+	color: #FFFFFF;
+	font-size: 1em;
+	text-align: left;
+	margin-right: 25px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.3s linear;
+}
+ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+ul li:hover a {
+	color: #ED1C24;
+}
+a:visited  {
+	color: #FFFFFF;
+}
+.main-img-container {
+	width: 100%;
+}
+/* About Section */
+.text_column {
+	width: 28%;
+	font-weight: lighter;
+	font-style: italic;
+	line-height: 25px;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #000000;
+	text-align: justify;
+}
+.reviews {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 35px;
+	display: inline-block;
+	background-color: #FFFFFF;
+	margin-top: 0px;
+}
+.customer {
+	font-weight: bold;
+}
+audio {
+	margin-left: 10px;
+}
+footer {
+	background-color: #FFFFFF;
+	padding-top: 15px;
+}
+
+.button:hover {
+	background-color: #FEFEFE;
+	color: #C4C4C4;
+	cursor: pointer;
+}
+.copyright {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #000000;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+}
+
+#main-img {
+	width: 100%;
+	height: auto;
+}
+.title {
+	margin: 0 auto;
+	text-align: center;
+	font-family: JAPAB;
+	font-size: 1.2em;
+}
+#menu-cont {
+	display: inline-block;
+	margin: 0 auto;
+}
+#menu ul {margin: 0;}
+#menu {
+	width: 47%;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0 15px 5px 15px;
+}
+#menu ul > li {
+	color: #000000;
+	list-style-type: none;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+#col2 ul > li > ul > li {font-weight: normal;}
+#col2 ul > li > ul {padding-left: 0;}
+#dinner, #sushi, #soup {
+	width: 100%;
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+#col1, #col2, #col3 {
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+#img-left, #img-right {
+	width: 23%;
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;
+}
+#img-left img {
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+#img-right img {
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+.mobile-img {
+	display: none;
+}
+.about-col {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#about-img-cont {
+	width: 100%;
+	text-align: center;
+}
+#about-img-cont img {
+	padding: 10px 15px 5px 10px;
+}
+#contact {width: 100%;}
+#contactform {
+	margin-left: 15px;
+	width: 50%;
+	display: inline-block;
+}
+#map {
+	width: 100%;
+	text-align: center;
+}
+input {
+  display: inline-block;
+}
+input, textarea {
+	margin-bottom: 10px;
+	margin-left: 5px;
+}
+label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 25%;
+    text-align: right;
+}
+#submit {display: block;}
+#contactinfo{
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+#contactinfo h3{font-family: JAPAB;}
+#confirmation {margin-left: 15px;}
+
+
+/* Mobile */
+@media (max-width: 375px) {
+body {
+	background-image: none;
+}
+#logo {
+	width: 100%;
+	margin-top: 0;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+	background-image: url(../images/yama-mobile.png);
+}
+.container {
+	width: 100%;
+}
+.container header nav {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	float: none;
+}
+header nav ul {
+	display: inline;
+	background-color: black;
+	width: 100%;
+}
+nav ul li {
+	margin: 0;
+	width: 25%;
+	font-size: 18px;
+	padding-left: 0;
+}
+.text_column {
+	width: 100%;
+	text-align: justify;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.thumbnail {
+	width: 100%;
+}
+.footer_column {
+	width: 100%;
+	margin-top: 0px;
+}
+.banner {
+	background-color: #2D9AB7;
+	background-image: none;
+}
+.hide img {
+	display: none;
+}
+#menu-cont, #menu {
+	width: 100%;
+	padding: 0;
+}
+#menu ul {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#dinner, #sushi, #soup {
+	font-size: 1.5em;
+}
+.mobile-img {
+	display: inline;
+	width: 100%;
+}
+.mobile-img img{
+	width: 100%;
+	padding-bottom: 15px;
+}
+.about-col {
+	width: 95%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-left: 0;
+	margin-right: 0;
+}
+#about-img-cont img{
+	width: 80%;
+}
+#map {
+	display: none;
+}
+#contactform {
+	width: 100%;
+}
+#contactinfo {
+	width: 100%;
+}
+}
+
+/* Small Tablets */
+@media (min-width: 376px)and (max-width: 767px) {
+#logo {
+	width: 45%;
+	margin: auto;
+	display: block;
+}
+.container {
+	width: 100%;
+}
+.container header nav {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	float: none;
+	overflow: auto;
+	display: inline-block;
+}
+
+header nav ul {
+	padding: 0px;
+	float: none;
+	
+}
+nav ul li {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+#contactform, #contactinfo {
+	width: 80%;
+}
+.text_column {
+	width: 100%;
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.footer_column {
+	width: 100%;
+}
+}
+
+/* Small Desktops */
+@media (min-width: 768px) and (max-width: 1096px) {
+.container {
+	width: 90%;
+}
+.text_column {
+	width: 100%;
+}
+.thumbnail {
+	width: 50%;
+}
+.text_column {
+	width: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#img-left, #img-right {
+	width: 20%;
+}
+.about-col {
+	width: 95%;
+}
+#contactform {
+	width: 40%;
+}
+}
